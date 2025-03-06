@@ -1,0 +1,8 @@
+fastapi
+pymongo
+uvicorn
+google-genai
+pydantic
+motor
+python-dotenv
+fastapi[all]
