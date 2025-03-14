@@ -153,3 +153,56 @@ body {
     @apply bg-background text-foreground;
   }
 }
+:root {
+  --color-primary: #2563EB; /* Bright Blue */
+  --color-secondary: #E11D48; /* Deep Red */
+  --color-background: #F8FAFC; /* Soft White */
+  --color-text: #1E293B; /* Slate Gray */
+}
+
+
+
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-text {
+  color: var(--color-text);
+}
+/* ======== Professional Global Theme ======== */
+:root {
+  --primary: #004aad; /* Corporate Blue */
+  --secondary: #ff7f11; /* Vibrant Orange */
+  --background: #f4f7fc; /* Light Grayish Blue */
+  --surface: #ffffff; /* White */
+  --text-primary: #1e293b; /* Deep Gray */
+  --text-secondary: #64748b; /* Soft Gray */
+  --border: #e2e8f0; /* Light Gray */
+  
+}
+:root {
+  --primary: #004aad; /* Corporate Blue */
+  --secondary: #ff7f11; /* Vibrant Orange */
+  --background: #f4f7fc; /* Light Grayish Blue */
+  --surface: #ffffff; /* White */
+  --text-primary: #1e293b; /* Deep Gray */
+  --text-secondary: #64748b; /* Soft Gray */
+  --border: #e2e8f0; /* Light Gray */
+}
+
+.bg-background { background-color: var(--background); }
+.bg-surface { background-color: var(--surface); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.border-default { border-color: var(--border); }
+.btn-primary { background-color: var(--primary); color: white; }
+.btn-primary:hover { background-color: #003580; }
