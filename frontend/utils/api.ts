@@ -1,7 +1,7 @@
 import axios from "axios"
 
-// Define the base URL for your API
-const API_BASE_URL = "http://localhost:8000" // Replace with your actual API base URL
+// Load the FastAPI backend URL from environment variables
+const API_BASE_URL = process.env.FASTAPI_BACKEND || "http://localhost:8000"
 
 // Function to fetch generated content
 export const generateContent = async (slug: string, description: string) => {
