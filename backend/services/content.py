@@ -1,9 +1,13 @@
-from templates import blog, yt  # Import templates
+from templates import blog, yt, hashtags, social_media, product_description, ai_post_caption  # Import all templates
 
 # Available templates
 TEMPLATES = {
-    "blog": blog.generate,
-    "yt": yt.generate
+    "blog-idea": blog.generate,  # Blog ideas
+    "youtube-video-idea": yt.generate,  # YouTube video ideas
+    "hashtags": hashtags.generate,  # Hashtag generator
+    "social-media-post": social_media.generate,  # Social media post generator
+    "product-description": product_description.generate,  # Product description generator
+    "ai-post-caption": ai_post_caption.generate # Post caption generater
 }
 
 # Generate content
