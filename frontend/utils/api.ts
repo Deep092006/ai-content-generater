@@ -1,7 +1,7 @@
 import axios from "axios"
 
 // Load the FastAPI backend URL from environment variables
-const API_BASE_URL = process.env.FASTAPI_BACKEND || "http://localhost:8000"
+const API_BASE_URL = "https://ai-content-generater-e5ps.vercel.app"
 
 // Function to fetch generated content
 export const generateContent = async (slug: string, description: string) => {
