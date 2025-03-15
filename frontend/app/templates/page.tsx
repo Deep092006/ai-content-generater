@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
-import { Book, Video, MessageSquare, Hash, Smartphone, Mail, ShoppingCart } from "lucide-react"
-import CtaButton from "../components/CtaButton"
+import { Book, Video, MessageSquare, Hash, Smartphone, ShoppingCart } from "lucide-react"
+
 
 const TemplatesPage = () => {
   const templates = [
