@@ -39,7 +39,7 @@ body {
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primnameary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -179,30 +179,76 @@ body {
   color: var(--color-text);
 }
 /* ======== Professional Global Theme ======== */
+/* globals.css */
+
 :root {
-  --primary: #004aad; /* Corporate Blue */
-  --secondary: #ff7f11; /* Vibrant Orange */
-  --background: #f4f7fc; /* Light Grayish Blue */
-  --surface: #ffffff; /* White */
-  --text-primary: #1e293b; /* Deep Gray */
-  --text-secondary: #64748b; /* Soft Gray */
-  --border: #e2e8f0; /* Light Gray */
-  
-}
-:root {
-  --primary: #004aad; /* Corporate Blue */
-  --secondary: #ff7f11; /* Vibrant Orange */
-  --background: #f4f7fc; /* Light Grayish Blue */
-  --surface: #ffffff; /* White */
-  --text-primary: #1e293b; /* Deep Gray */
-  --text-secondary: #64748b; /* Soft Gray */
-  --border: #e2e8f0; /* Light Gray */
+  /* Colors */
+  --color-primary: #6366f1; /* Indigo */
+  --color-secondary: #a855f7; /* Purple */
+  --color-background: #111827; /* Dark gray */
+  --color-text: #f3f4f6; /* Light gray */
+  --color-text-secondary: #9ca3af; /* Gray */
+  --color-button-hover: #4f46e5; /* Darker indigo */
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
 }
 
-.bg-background { background-color: var(--background); }
-.bg-surface { background-color: var(--surface); }
-.text-primary { color: var(--text-primary); }
-.text-secondary { color: var(--text-secondary); }
-.border-default { border-color: var(--border); }
-.btn-primary { background-color: var(--primary); color: white; }
-.btn-primary:hover { background-color: #003580; }
+/* Apply the theme to the body */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}

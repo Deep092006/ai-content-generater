@@ -13,7 +13,7 @@ def generate(description, max_retries=5):
             # Send request to Gemini API
             response = client.models.generate_content(
                 model="gemini-1.5-flash",
-                contents=f"Generate 5 blog ideas for {description}. Return a clean JSON array where each object has 'title' and 'description'. No extra text, no numbers, no markdown, no code blocks."
+                contents=f"Generate 5 hashtags for a social media post for {description}. Return a clean JSON array where each object has 'title' and 'description'. No extra text, no numbers, no markdown, no code blocks."
             )
 
             # Attempt to parse the response as JSON
@@ -33,5 +33,5 @@ def generate(description, max_retries=5):
         time.sleep(1)  # Add a small delay between retries
 
     # If all retries fail, raise an internal error
-    raise Exception("Internal Error: Failed to generate content after multiple attempts.")
+    raise Exception("Internal Error: Failed to generate captions after multiple attempts.")
 
