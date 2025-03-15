@@ -1,17 +1,19 @@
-"use client"
-import { Rocket, Users, Code, Globe, Sparkles, BrainCircuit, Layers, ShieldCheck, Lightbulb } from "lucide-react"
-import FeatureCard from "../components/FeatureCard"
-import CtaButton from "../components/CtaButton"
+"use client";
+
+import { Rocket, Users, Code, Globe, Sparkles, BrainCircuit, Layers, ShieldCheck } from "lucide-react";
+import FeatureCard from "../components/FeatureCard";
+import CtaButton from "../components/CtaButton";
 
 const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white flex flex-col items-center px-6 py-12">
+      
       {/* DeepWrite AI Section - Introduction */}
       <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-8">
         DeepWrite AI – The Future of Content Generation
       </h1>
       <p className="text-gray-300 text-xl text-center max-w-3xl mb-12">
-        <span className="text-blue-400 font-semibold">DeepWrite AI</span> is an advanced AI-powered content generation platform designed to help businesses, creators, and professionals craft high-quality content effortlessly. Whether it's blogs, marketing copy, or technical documentation, DeepWrite AI makes content creation faster, smarter, and more efficient.
+        <span className="text-blue-400 font-semibold">DeepWrite AI</span> is an advanced AI-powered content generation platform designed to help businesses, creators, and professionals craft high-quality content effortlessly. Whether it&apos;s blogs, marketing copy, or technical documentation, DeepWrite AI makes content creation faster, smarter, and more efficient.
       </p>
 
       {/* Features Section - Core Capabilities */}
@@ -28,9 +30,10 @@ const AboutUsPage = () => {
           description="Perfect for writers, developers, marketers, and businesses who need content at scale."
           iconColor="text-purple-400"
         />
+        {/* Tech Stack */}
         <FeatureCard
           icon={<Code className="w-8 h-8" />}
-          title="Built with Next.js & FastAPI" // Tech Stack
+          title="Built with Next.js & FastAPI"
           description="DeepWrite AI is powered by modern frameworks like Next.js, FastAPI, LangChain, and OpenAI API."
           iconColor="text-green-400"
         />
@@ -109,7 +112,7 @@ const AboutUsPage = () => {
         </CtaButton>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUsPage
+export default AboutUsPage;
