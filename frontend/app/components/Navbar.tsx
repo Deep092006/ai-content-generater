@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="bg-gray-900 border-b border-gray-800 flex justify-between items-center w-full h-16 px-6 py-2 shadow-lg sticky top-0 z-50">
       {/* Logo - Navigation to Home */}
       <Link href="/" className="text-2xl font-bold text-white hover:text-blue-400 transition-all">
-        DeepWrite AI
+        ContentAI AI
       </Link>
 
       {/* Desktop Navigation and Auth Buttons - Hidden on Mobile */}
@@ -29,9 +29,6 @@ const Navbar = () => {
           </Link>
           <Link href="/features" className="text-gray-300 hover:text-blue-400 transition-all">
             Features
-          </Link>
-          <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-all">
-            About
           </Link>
         </nav>
         {/* Authentication Buttons */}
@@ -71,9 +68,6 @@ const Navbar = () => {
           </Link>
           <Link href="/features" className="text-gray-300 hover:text-blue-400 transition-all">
             Features
-          </Link>
-          <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-all">
-            About
           </Link>
 
           {/* Mobile Authentication Buttons */}

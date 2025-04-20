@@ -21,7 +21,7 @@ const TemplatesPage = () => {
       </h1>
       {/* Page Description */}
       <p className="text-gray-300 text-lg mb-8">
-        Choose a template to generate content effortlessly with DeepWrite AI.
+        Choose a template to generate content effortlessly with ContentAI.
       </p>
       {/* Template Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">

@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='bg-red-600 flex justify-between items-center w-full h-11 px-3 py-1'>
       <div className='text-2xl text-center text-black border-e-violet-200 font-medium'>
-        DeepWrite AI
+        ContentAI AI
       </div>
       <div>
         <SignedOut>

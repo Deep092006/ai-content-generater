@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DeepWrite AI",
+  title: "ContentAI",
   description: "AI-powered content generator",
 };
 

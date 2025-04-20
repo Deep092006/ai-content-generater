@@ -12,7 +12,7 @@ const FeaturesPage = () => {
       </h1>
       {/* Page Description */}
       <p className="text-gray-300 text-lg text-center max-w-2xl mb-12">
-        Discover the powerful features of DeepWrite AI designed to help you create high-quality content effortlessly. From blog ideas to social media captions, we’ve got you covered.
+        Discover the powerful features of ContentAI designed to help you create high-quality content effortlessly. From blog ideas to social media captions, we’ve got you covered.
       </p>
 
       {/* Feature Cards Grid */}
@@ -44,13 +44,13 @@ const FeaturesPage = () => {
         <FeatureCard
           icon={<Smartphone className="w-6 h-6" />}
           title="Mobile-Friendly"
-          description="Access DeepWrite AI on any device and create content on the go."
+          description="Access ContentAI AI on any device and create content on the go."
           iconColor="text-yellow-400"
         />
         <FeatureCard
           icon={<Code className="w-6 h-6" />}
           title="API Integration"
-          description="Integrate DeepWrite AI with your existing tools and workflows."
+          description="Integrate ContentAI AI with your existing tools and workflows."
           iconColor="text-indigo-400"
         />
       </div>
@@ -61,7 +61,7 @@ const FeaturesPage = () => {
           Ready to Transform Your Content Creation?
         </h2>
         <p className="text-gray-300 text-lg mb-6">
-          Join thousands of users who are already creating amazing content with DeepWrite AI.
+          Join thousands of users who are already creating amazing content with ContentAI AI.
         </p>
         <CtaButton href="/templates" variant="primary">
           Get Started

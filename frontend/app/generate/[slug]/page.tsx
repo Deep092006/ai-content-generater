@@ -44,9 +44,9 @@ const Generate: React.FC<PageProps> = ({ params }) => {
   }
 
   const formatSlugToHeading = (slug: string | null) => {
-    if (!slug) return "DeepWrite AI Content Generator"
+    if (!slug) return "ContentAI AI Content Generator"
     const formattedSlug = slug.replace(/-/g, " ")
-    return `DeepWrite AI ${formattedSlug.charAt(0).toUpperCase() + formattedSlug.slice(1)} Generator`
+    return `ContentAI AI ${formattedSlug.charAt(0).toUpperCase() + formattedSlug.slice(1)} Generator`
   }
 
   return (
@@ -56,7 +56,7 @@ const Generate: React.FC<PageProps> = ({ params }) => {
           {formatSlugToHeading(slug)}
         </h1>
         <p className="text-gray-300 mt-4 text-lg">
-          Generate AI-powered content effortlessly with DeepWrite.
+          Generate AI-powered content effortlessly with ContentAI.
         </p>
       </div>
       <div className="w-full max-w-2xl">
